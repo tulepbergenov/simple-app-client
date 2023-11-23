@@ -1,3 +1,4 @@
+import { Providers } from "@/core/providers";
 import { IChildren } from "@/shared/types";
 import { appTitle } from "@/shared/utils";
 import type { Metadata, Viewport } from "next";
@@ -19,7 +20,9 @@ const RootLayout = ({ children }: IChildren) => {
   return (
     <html lang="en">
       <body>
-        <main>{children}</main>
+        <Providers>
+          <main>{children}</main>
+        </Providers>
       </body>
     </html>
   );
