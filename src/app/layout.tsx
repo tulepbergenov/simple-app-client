@@ -1,6 +1,6 @@
-import type { Metadata, Viewport } from "next";
-import { appTitle } from "@/shared/utils";
 import { IChildren } from "@/shared/types";
+import { appTitle } from "@/shared/utils";
+import type { Metadata, Viewport } from "next";
 
 export const metadata: Metadata = {
   title: appTitle(),
